@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/souravhajra123/ElevateLabsTask2.git'
+                git branch: 'main', url: 'https://github.com/souravhajra123/ElevateLabsTask2.git'
             }
         }
 

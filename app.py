@@ -1,15 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return render_template('index.html')
+def hello() :
+     return "Hello, Docker!"
 
-@app.route('/hello/<name>')
-def hello(name):
-    return render_template('hello.html', user=name)
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-
+if __name__== '__main__' :
+     app.run(host='0.0.0.0', port=5000)
